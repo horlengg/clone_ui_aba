@@ -20,17 +20,26 @@ struct HomeView : View {
 
                 HomeHeaderView()
                 
+                Spacer()
+                    .frame(height: 20)
+                
                 buildHomeUserProfileView()
                 
                 Spacer()
                     .frame(height: 20)
                 
-                buildAppHomeBannerView()
+                HomeBannerView()
+                
+                Spacer()
+                    .frame(height: 20)
+                
+                HomeMenuListView()
+//                    .background()
+                
+                Spacer()
+                    .frame(height: 20)
                 
 
-                Text("Home Page")
-                    .font(.title)
-                    .foregroundColor(.white)
                 
                 Spacer()
                 
@@ -46,7 +55,7 @@ struct HomeView : View {
             Image("profile")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 60,height: 60)
+                .frame(width: 50,height: 50)
                 .clipShape(Circle())
                 .overlay(
                     RoundedRectangle(cornerRadius: 100)
@@ -58,45 +67,21 @@ struct HomeView : View {
                 .frame(width: 20)
             
             VStack(alignment : .leading) {
+                
                 Text("Good Morning")
                     .font(.caption)
                     .fontWeight(.regular)
                     .foregroundColor(.white)
+                
                 Text("Houleng")
                     .fontWeight(.bold)
                     .foregroundColor(.white)
+                
             }
             
             Spacer()
         }
         .padding(.horizontal,20)
     }
-    
-    @ViewBuilder
-    func buildAppHomeBannerView() -> some View {
-        ZStack {
-            Image("app_banner_background")
-                .resizable()
-                .scaledToFit()
-                .frame(height: 250)
-            
-            VStack {
-                HStack {
-                    VStack {
-                        
-                    }
-                    .frame(width: 60,height: 40)
-                    .background(.red)
-                    
-                    Button(action :{}){
-                        Image("")
-                    }
-                    
-                    Spacer()
-                }
-            }
-        }
-    }
-    
 }
 

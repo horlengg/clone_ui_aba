@@ -33,6 +33,7 @@ struct HomeHeaderView: View {
         .padding(.horizontal,20)
         
     }
+    
 }
 
 

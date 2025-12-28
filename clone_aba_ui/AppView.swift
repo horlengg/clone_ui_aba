@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AppView: View {
     var body: some View {
         HomeView()
     }
 }
 
 #Preview {
-    HomeView()
+    AppView()
 }

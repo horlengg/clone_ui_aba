@@ -11,7 +11,7 @@ import SwiftUI
 struct clone_aba_uiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppView()
         }
     }
 }
