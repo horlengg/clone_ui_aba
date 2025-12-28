@@ -10,6 +10,16 @@ The project focuses on recreating the **visual design, layout, and navigation fl
 
 ---
 
+<br>
+
+![aba_ui_clone_demo.gif](./aba_ui_clone_demo.gif)
+
+<br>
+
+![aba_ui_clone_demo.png](./aba_ui_clone_demo.png)
+
+<br>
+
 ## 📱 Features
 
 - Home screen UI

@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		10854C592F01715500D4CCCD /* aba_ui_clone_demo.png in Resources */ = {isa = PBXBuildFile; fileRef = 10854C582F01715500D4CCCD /* aba_ui_clone_demo.png */; };
+		10854C5B2F01728500D4CCCD /* aba_ui_clone_demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 10854C5A2F01728500D4CCCD /* aba_ui_clone_demo.gif */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		10CDBFEC2EF6981A00693C7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10854C582F01715500D4CCCD /* aba_ui_clone_demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aba_ui_clone_demo.png; sourceTree = "<group>"; };
+		10854C5A2F01728500D4CCCD /* aba_ui_clone_demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = aba_ui_clone_demo.gif; sourceTree = "<group>"; };
 		10CDBFDE2EF6981800693C7D /* clone_aba_ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clone_aba_ui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CDBFEB2EF6981A00693C7D /* clone_aba_uiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clone_aba_uiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CDBFF52EF6981A00693C7D /* clone_aba_uiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clone_aba_uiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +86,8 @@
 				10CDBFEE2EF6981A00693C7D /* clone_aba_uiTests */,
 				10CDBFF82EF6981A00693C7D /* clone_aba_uiUITests */,
 				10CDBFDF2EF6981800693C7D /* Products */,
+				10854C582F01715500D4CCCD /* aba_ui_clone_demo.png */,
+				10854C5A2F01728500D4CCCD /* aba_ui_clone_demo.gif */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10854C5B2F01728500D4CCCD /* aba_ui_clone_demo.gif in Resources */,
+				10854C592F01715500D4CCCD /* aba_ui_clone_demo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
