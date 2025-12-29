@@ -35,12 +35,14 @@ struct HomeBannerView: View {
                         .frame(height: 15)
                     
                     HStack(spacing: 10) {
+                        
                         buildBannerButton(
                             iconName: "receive_money_icon",
                             label: "Receive",
                             iconSize: 25,
                             action: {}
                         )
+                        
                         buildBannerButton(
                             iconName: "send_money_icon",
                             label: "Send",
@@ -65,25 +67,29 @@ struct HomeBannerView: View {
     
     @ViewBuilder
     func buildBannerTop() -> some View {
-        HStack(spacing: 5) {
-            
-            if isShowAmount {
-                Text("$ 44.44")
-                    .font(.system(size: 16))
-                    .foregroundColor(.primaryColor)
-            }
-            else {
-                Button(action : toggleAmount){
-                    Image("amount_hidden_cover")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 30)
-                    
+        HStack(spacing:0) {
+            ZStack(alignment: .leading) {
+                
+                HStack{
+                    Text("$44.44")
+                        .font(.system(size: 22))
+                        .fontWeight(.semibold)
+                        .foregroundColor(.primaryColor)
                 }
+                Image("amount_hidden_cover")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 35)
+                    .offset(x : -5)
+                    .opacity(isShowAmount ? 0 : 1)
+                    .animation(.easeOut(duration: 0.2),value: isShowAmount)
+                
                 
             }
+            .frame(width: 90,height: 30)
+            
                 
-            Button(action: {}) {
+            Button(action: toggleAmount) {
                 VStack {
                     Image("eye_icon")
                         .resizable()
@@ -103,7 +109,7 @@ struct HomeBannerView: View {
     func buildBannerCardTitle() -> some View {
         HStack {
             Spacer()
-                .frame(width: 5)
+                .frame(width: 2)
             
             Text("Default")
                 .font(.system(size: 10))
